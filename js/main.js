@@ -1,7 +1,5 @@
 (function ($) {
   $(function () {
-
-    // サイドサブメニューアコーディオン
     $('.sub-menu-head').on('click', function () {
       var $subNav = $(this).next('.sub-menu-nav');
       if ($subNav.is(':visible')) {

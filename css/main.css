@@ -71,9 +71,30 @@ body {
   color: #F2F2F2;
 }
 
-h3 {
-  font-size: 131%;
+.inner h3 {
+  max-width: 700px;
+  font-size: 180%;
   margin-bottom: .7em;
+  border-bottom: solid 1.5px #666;
+  margin: auto;
+  text-align: center;
+  display: -webkit-box;
+  display: block;
+}
+
+.inner p {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  max-width: 800px;
+  font-size: 120%;
+  display: block;
+}
+
+#blank {
+  height: 100px;
 }
 
 #copyright a {
@@ -302,9 +323,17 @@ h3 {
   background: #0D0D0D;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
   #container {
     margin-left: 0;
+  }
+
+  .inner h3 {
+    font-size: medium;
+  }
+
+  .inner p {
+    font-size: medium;
   }
 
   #brand-logo {
@@ -312,7 +341,7 @@ h3 {
   }
 
   #nav-toggle span {
-    background: #033560;
+    background: #0D0D0D;
   }
 
   .close #nav-toggle span {
