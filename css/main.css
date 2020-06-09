@@ -28,9 +28,9 @@ body {
   background: #fff;
   margin-left: 260px;
   position: relative;
-  -moz-transition: margin-left .25s linear;
-  -webkit-transition: margin-left .25s linear;
-  transition: margin-left .25s linear;
+/*  -moz-transition: margin-left .85s linear;
+  -webkit-transition: margin-left .85s linear;
+  transition: margin-left .85s linear;*/
 }
 
 #main {
@@ -137,11 +137,13 @@ body {
   background: #262626;
 }
 
+/*
 #brand-logo {
-  -webkit-transition: .35s ease-in-out;
-  -moz-transition: .35s ease-in-out;
-  transition: .35s ease-in-out;
+  -webkit-transition: .85s ease-in-out;
+  -moz-transition: .85s ease-in-out;
+  transition: .85s ease-in-out;
 }
+*/
 
 #global-nav ul {
   list-style: none;
@@ -157,9 +159,9 @@ body {
   text-decoration: none;
   display: block;
   padding: 15px;
-  -moz-transition: color .3s linear;
+/*  -moz-transition: color .3s linear;
   -webkit-transition: color .3s linear;
-  transition: color .3s linear;
+  transition: color .3s linear;*/
 }
 
 #global-nav .sub-menu.is-active>a,
@@ -249,9 +251,9 @@ body {
   display: block;
   background: #fff;
   position: absolute;
-  -webkit-transition: .35s ease-in-out;
+/*  -webkit-transition: .35s ease-in-out;
   -moz-transition: .35s ease-in-out;
-  transition: .35s ease-in-out;
+  transition: .35s ease-in-out;*/
 }
 
 /* #nav-toggle close */
@@ -360,5 +362,3 @@ body {
     left: 0;
   }
 }
-
-@media screen and (max-width: 400px) {}
