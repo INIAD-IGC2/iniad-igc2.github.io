@@ -40,7 +40,6 @@ body {
 }
 
 #main p {
-  margin-bottom: 1em;
   line-height: 1.9;
 }
 
@@ -83,13 +82,25 @@ body {
 }
 
 .inner p {
+  margin-right: auto;
+  margin-left: auto;
+  width: fit-content;
+  max-width: 800px;
+  font-size: 130%;
+  display: block;
+}
+
+.inner p.header {
+  margin-top: 20px;
+}
+
+.inner li {
   margin-top: 20px;
   margin-bottom: 20px;
   margin-right: auto;
   margin-left: auto;
   width: fit-content;
   max-width: 800px;
-  font-size: 120%;
   display: block;
 }
 
