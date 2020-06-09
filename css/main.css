@@ -137,11 +137,13 @@ body {
   background: #262626;
 }
 
+/*
 #brand-logo {
-/*  -webkit-transition: .85s ease-in-out;
+  -webkit-transition: .85s ease-in-out;
   -moz-transition: .85s ease-in-out;
-  transition: .85s ease-in-out;*/
+  transition: .85s ease-in-out;
 }
+*/
 
 #global-nav ul {
   list-style: none;
