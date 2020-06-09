@@ -104,7 +104,7 @@ body {
   display: block;
 }
 
-.inner img{
+.inner img#twitter-image{
   margin-right: auto;
   margin-left: auto;
   display: block;
