@@ -1,9 +1,56 @@
 .inner h4 {
-    max-width: 700px;
-    font-size: 140%;
-    margin-bottom: .7em;  
-    margin: auto;
-    text-align: left;
-    display: -webkit-box;
-    display: block;
-  }
+  max-width: 700px;
+  font-size: 140%;
+  margin-bottom: .7em;  
+  margin: auto;
+  text-align: left;
+  display: -webkit-box;
+  display: block;
+}
+
+.member p{
+  display: inline-block;
+  vertical-align: top;
+}
+
+.member{
+  height: 180px;
+}
+
+.inner .member-name{
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.inner .member-img{
+  position: relative;
+  top: 10px;
+  height: 160px;
+  width: 160px;
+}
+
+.inner .member-text{
+  float: right;
+  word-wrap: break-word;
+  max-width: 530px;
+  position: relative;
+  left: 20px;
+  border-bottom: solid 1.5px #666;
+}
+
+.member-url{
+  color: blue;
+}
+
+.member{
+  max-width: 700px;
+  font-size: 100%;
+  margin-bottom: .7em; 
+  margin: auto;
+  text-align: left;
+  display: -webkit-box;
+  display: block;
+}
+
+
+
