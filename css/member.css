@@ -1,0 +1,9 @@
+.inner h4 {
+    max-width: 700px;
+    font-size: 140%;
+    margin-bottom: .7em;  
+    margin: auto;
+    text-align: left;
+    display: -webkit-box;
+    display: block;
+  }
