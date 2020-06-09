@@ -28,7 +28,7 @@ body {
   background: #fff;
   margin-left: 260px;
   position: relative;
-/*  -moz-transition: margin-left .85s linear;
+  /*  -moz-transition: margin-left .85s linear;
   -webkit-transition: margin-left .85s linear;
   transition: margin-left .85s linear;*/
 }
@@ -170,7 +170,7 @@ body {
   text-decoration: none;
   display: block;
   padding: 15px;
-/*  -moz-transition: color .3s linear;
+  /*  -moz-transition: color .3s linear;
   -webkit-transition: color .3s linear;
   transition: color .3s linear;*/
 }
@@ -262,7 +262,7 @@ body {
   display: block;
   background: #fff;
   position: absolute;
-/*  -webkit-transition: .35s ease-in-out;
+  /*  -webkit-transition: .35s ease-in-out;
   -moz-transition: .35s ease-in-out;
   transition: .35s ease-in-out;*/
 }
