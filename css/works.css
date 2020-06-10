@@ -1,11 +1,9 @@
-.inner div
-{
+.inner div {
     margin: 15px;
     text-align: center;
 }
 
-.inner span
-{
-    font-size: 100%; 
+.inner span {
+    font-size: 100%;
     margin: 15px;
 }
