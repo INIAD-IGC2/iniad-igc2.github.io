@@ -32,7 +32,7 @@
 .inner .member-text {
   float: right;
   word-wrap: break-word;
-  max-width: 530px;
+  width: 530px;
   position: relative;
   left: 20px;
   border-bottom: solid 1.5px #666;
