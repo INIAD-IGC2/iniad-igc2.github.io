@@ -30,6 +30,7 @@
 }
 
 .inner .member-text {
+  height: 180px;
   float: right;
   word-wrap: break-word;
   width: 530px;
