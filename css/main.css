@@ -49,12 +49,7 @@ body {
 
 /* main-visual */
 #main-visual {
-  background: #737373;
-
-
-  height: 400px;
   display: flex;
-
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
@@ -63,6 +58,11 @@ body {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+}
+
+#main-visual img{
+  width: 90%;
+  height: 90%;
 }
 
 #main-visual h2 {
