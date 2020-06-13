@@ -14,10 +14,6 @@
   vertical-align: top;
 }
 
-.member {
-  height: 180px;
-}
-
 .inner .member-name {
   font-size: 120%;
   font-weight: bold;
@@ -45,6 +41,7 @@
 }
 
 .member {
+  height: 180px;
   max-width: 700px;
   font-size: 100%;
   margin-bottom: .7em;
