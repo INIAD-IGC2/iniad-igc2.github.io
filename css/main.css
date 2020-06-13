@@ -60,7 +60,8 @@ body {
   align-items: center;
 }
 
-#main-visual img{
+#main-visual img {
+  max-width: 1100px;
   width: 90%;
   height: 90%;
 }
@@ -71,7 +72,7 @@ body {
 }
 
 .inner h3 {
-  max-width: 700px;
+  max-width: 600px;
   font-size: 180%;
   margin-bottom: .7em;
   border-bottom: solid 1.5px #666;
@@ -82,12 +83,8 @@ body {
 }
 
 .inner p {
-  margin-right: auto;
-  margin-left: auto;
   width: fit-content;
-  max-width: 800px;
   font-size: 130%;
-  display: block;
 }
 
 .inner p.header {
@@ -97,23 +94,31 @@ body {
 .inner li {
   margin-top: 20px;
   margin-bottom: 20px;
-  margin-right: auto;
-  margin-left: auto;
-  width: fit-content;
-  max-width: 800px;
-  display: block;
 }
 
-.inner img#twitter-image{
-  margin-right: auto;
-  margin-left: auto;
-  display: block;
+.inner img#twitter-image {
+  margin: 0 auto;
+  margin-top: 30px;
   max-width: 300px;
   width: fit-content;
 }
 
-#blank {
+.blank {
   height: 100px;
+}
+
+.sentence {
+  max-width: 600px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.inner td {
+  font-size: 130%;
+  border: solid 1px #666;
+  padding: 3px;
+  min-width: 140px;
 }
 
 #copyright a {
@@ -379,5 +384,16 @@ body {
 
   .close #sidebar {
     left: 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .inner p {
+    font-size: small;
+  }
+
+  .inner td {
+    font-size: small;
+    min-width: 120px;
   }
 }
