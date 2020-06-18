@@ -1,17 +1,11 @@
 .inner h4 {
-  max-width: 700px;
+  max-width: 600px;
   font-size: 160%;
   margin-bottom: .7em;
   margin: auto;
   text-align: left;
   display: -webkit-box;
   display: block;
-
-}
-
-.member p {
-  display: inline-block;
-  vertical-align: top;
 }
 
 .inner .member-name {
@@ -20,17 +14,19 @@
 }
 
 .inner .member-img {
+  float: left;
   position: relative;
   top: 10px;
-  height: 160px;
-  width: 160px;
+  bottom: 10px;
+  max-height: 32%;
+  max-width: 32%;
 }
 
 .inner .member-text {
-  height: 180px;
+  height: 100%;
   float: right;
   word-wrap: break-word;
-  width: 530px;
+  width: 68%;
   position: relative;
   left: 20px;
   border-bottom: solid 1.5px #666;
@@ -41,9 +37,10 @@
 }
 
 .member {
-  height: 180px;
-  max-width: 700px;
-  font-size: 100%;
+  height: 200px;
+  width: 100%;
+  max-width: 600px;
+  font-size: small;
   margin-bottom: .7em;
   margin: auto;
   text-align: left;
