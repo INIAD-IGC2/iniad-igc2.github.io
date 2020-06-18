@@ -1,0 +1,27 @@
+.icon:before {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Font Awesome 5 Brands";
+    margin-right: .2em;
+}
+
+.icon-twitter:before {
+    content: '\f081';
+    color: #1DA1F2;
+    font-weight: 900;
+}
+
+.icon-github:before {
+    content: '\f092';
+    color: #211F1F;
+    font-weight: 900;
+}
+
+.icon-youtube:before {
+    content: '\f431';
+    color: #c4302b;
+    font-weight: 900;
+}
