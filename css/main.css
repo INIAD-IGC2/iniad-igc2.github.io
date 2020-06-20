@@ -103,6 +103,10 @@ body {
   width: fit-content;
 }
 
+.inner div.image-center {
+  text-align: center;
+}
+
 .blank {
   height: 100px;
 }
@@ -111,7 +115,6 @@ body {
   max-width: 600px;
   margin-right: auto;
   margin-left: auto;
-  text-align: center;
 }
 
 .inner td {
@@ -386,7 +389,7 @@ body {
     left: 0;
   }
 
-  .inner .member-text{
+  .inner .member-text {
     max-width: 400px;
     font-size: 120%;
   }
@@ -402,7 +405,7 @@ body {
     min-width: 120px;
   }
 
-  .inner .member-text{
+  .inner .member-text {
     font-size: 100%;
   }
 }
