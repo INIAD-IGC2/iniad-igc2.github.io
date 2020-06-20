@@ -1,35 +1,30 @@
 .works-list {
-    margin: 15px;
-    text-align: left;
-    width: 100%;
     margin-bottom: 400px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+    display: -webkit-box;
+    display: block;
 }
-
-.works-index {
-    display: inline-block;
-    text-align: left;
-    width: 30%;
-    margin: 1%;
-    height: 40%;
-    vertical-align: top;
-}
-
-.works-index img {
-    width: 100%;
-}
-
-.works-intrduction {
+.works-introduction{
     margin: 15px;
     width: 100%;
+    max-width: 600px;
     margin-bottom: 300px;
+    margin: auto;
+    text-align: center;
+    display: -webkit-box;
+    display: inline-block;
 }
 
 .video{
     position: relative;
-    width: 75%;
+    width: 90%;
     padding-top: 56.25%;
     display: inline-block;
     margin-bottom: 1.4em;
+    max-width: 550px;
+
 }
 
 .video iframe{
@@ -41,24 +36,31 @@
 }
 
 .works-intrbox {
+    display: inline-block;
     text-align: center;
     margin: 30px;
     padding-top: 100px;
     margin-top: 100px;
     width: 100%;
     word-wrap: break-word;
+    max-width: 600px;
 }
 
 .works-intrbox img {
     display: inline-block;
-    width: 75%;
+    width: 90%;
     margin-bottom: 1.4em;
+    max-width: 550px;
 }
 
 .works-intrbox h3 {
     margin-bottom: 1.4em;
 }
 
+.works-intrbox p{
+    width:100%;
+    text-align: left;
+}
 .works-sent {
     
     display: inline-block;
