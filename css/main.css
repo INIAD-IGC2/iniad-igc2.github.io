@@ -68,8 +68,8 @@ body {
 }
 
 .main-visual #video{
-  max-width: 800px;
-  height: 450px;
+  max-width: 400px;
+  height: 225px;
   width: 100%;
 }
 
@@ -427,6 +427,7 @@ body {
   }
 
   .main-visual #video{
+    max-width: 400px;
     height: 225px;
   }
 }
