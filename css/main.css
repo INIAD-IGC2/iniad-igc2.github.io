@@ -67,6 +67,12 @@ body {
   height: 100%;
 }
 
+.main-visual #video{
+  max-width: 800px;
+  height: 450px;
+  width: 100%;
+}
+
 .main-visual #title-image {
   max-width: 1100px;
   width: 90%;
@@ -400,6 +406,10 @@ body {
     max-width: 400px;
     font-size: 120%;
   }
+
+  .inner .main-visual #video{
+    height: 450px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -414,5 +424,9 @@ body {
 
   .inner .member-text {
     font-size: 100%;
+  }
+
+  .main-visual #video{
+    height: 225px;
   }
 }
