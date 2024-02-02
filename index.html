@@ -1,143 +1,101 @@
+
 <!DOCTYPE html>
+
 <html lang="ja">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Home/IGC²</title>
-  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.3/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/velocity/1.5.0/velocity.min.js"></script>
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery.perfect-scrollbar/0.8.1/js/perfect-scrollbar.jquery.min.js">
-  </script>
-  <script type="text/javascript" src="/js/main.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&family=Roboto:wght@300&display=swap"
-    rel="stylesheet"> <!-- フォント -->
-  <link rel="stylesheet" type="text/css" href="/css/main.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/IGC2AppleTouchIcon.jpg"><!--ページをスマホのホーム画面に追加したときの画像-->
+
+    <link rel="stylesheet" type="text/css" href="/css/variables.css"><!--変数-->
+    <link rel="stylesheet" type="text/css" href="/css/header.css"><!--ヘッダー-->
+    <link rel="stylesheet" type="text/css" href="/css/main.css"><!--汎用-->
+    <script type="text/javascript" src="/js/main.js"></script>
+
+    <title>Home/IGC²</title>
 </head>
 
 <body>
-  <div id="nav-toggle">
-    <div>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
-  </div>
 
-  <aside id="sidebar" class="scroll">
-    <!-- サイドバー -->
-    <nav id="global-nav">
-      <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="/html/about.html">About</a></li>
-        <li class="sub-menu">
-          <a href="/html/works.html" class="sub-menu-head">Works</a>
-          <ul class="sub-menu-nav">
-            <li><a href="/html/works/2018.html">2018</a></li>
-            <li><a href="/html/works/2019.html">2019</a></li>
-            <li><a href="/html/works/2020.html">2020</a></li>
-            <li><a href="/html/works/2021.html">2021</a></li>
-            <li><a href="/html/works/2022.html">2022</a></li>
-          </ul>
-        </li>
-        <li><a href="https://igc2.jp/IniadGameShow2021.github.io/" target="_blank" rel="noopener noreferrer">INIADGameShow2021</a></li>
-        <li><a href="/html/member.html">Member</a></li>
-        <li><a href="/html/contact.html">Contact</a></li>
-      </ul>
-    </nav>
-    <br>
-    <a class="twitter-timeline" data-chrome="noheader" data-theme="dark"
-      href="https://twitter.com/igc2_iniad?ref_src=twsrc%5Etfw">Tweets by igc2_iniad</a>
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  </aside>
+    <header id="HeaderMain" class="Close headerFadeIn"></header>
 
-  <div id="container">
-    <!-- ページ本体 -->
-    <header id="global-head">
-      <!-- ヘッダー -->
-      <h1 id="brand-logo">IGC²</h1>
-    </header>
+    <div id="loading"><img src="/img/UI/Loading.webp" alt="loading image" id="loadingRoter" class="UIImg"><h3 id="loadingText">Now Loading...</h3></div>
 
-    <main id="main">
-      <!-- タイトル画像 -->
-      <div class="main-visual">
-        <img id="title-image" src="/img/title/TitleImage.png">
-      </div>
+    <div id="BodyContent"><!--Body-->
 
-      
-
-      <div >
-        
-      </div>
-
-      <section class="inner">
-        <!-- 本文 -->
-        <!--INIAD卒業生の方へ (INIADホームカミングデー)-->
-        <h3>INIADの卒業生・修了生の方へ</h3>
-        <div class="sentence">
-          <p>事務課より、INIADホームカミングデーの案内があります。</p>
-          <p>11月5日(日) 16時から、INIADの卒業生と坂村学部長とのお茶会が開催されます。</p>
-          <p>また、同日14時からINIAD同窓会の説明会も開催されます。</p>
-          <p>事前申し込み制のため、10月27日(金)までにフォームに回答する必要があります。</p>
-          <p>詳細は<a href="./html/INIADHomecoming.html"> こちらから </a></p>
-        </div>
-        <div class="blank"></div>
-        <!--NEWS-->
-        <h3>NEWS</h3>
-        <div class="sentence" style="height:350px; overflow-y:scroll; border: 2px solid #d5d5d5; margin-top: 10px;">
-          <p class="header">・[<font color="#4682b4" style="font-weight: 900;">告知</font>]2022/11/13<br><font color="orange" style="font-weight: 900;">デジゲー博展示</font><br>UDXギャラリー 4階Y-14abにてVOIDLAZEとMokshaを展示します。<br>詳しくは2022年のWorks欄をご覧ください。</p>
-          <p class="header">・[<font color="#4682b4" style="font-weight: 900;">告知</font>]2022/10/29-30<br><font color="orange" style="font-weight: 900;">INIAD GAME SHOW 2022</font><br>INIAD-FES 2022にて対面での作品展を催します。<br>ぜひお越しください!!</p>
-          <p>・2022/05/04 - 新メンバーに向けてサークル説明会を開催</p>
-          <p>・2022/04/27 - Web新歓でサークル紹介用動画を配信</p>
-          <p class="header">・[<font color="#4682b4" style="font-weight: 900;">告知</font>]2021/10/30-31<br><font color="orange" style="font-weight: 900;">INIAD GAME SHOW 2021</font><br>INIAD-FES 2021にてサークルのバーチャル作品展を催します。<br>ぜひお越しください!!</p>
-          <p>・2021/05/19 - 学祭に展示するための企画発表会をClusterで開催<br>
-            <img width="100%" src="/img/works/2021/SyuugouCluster.jpg"></p>
-          <p>・2021/05/05 - 新メンバーに向けてサークル説明会を開催</p>
-          <p>・2021/04/27 - サークル全体で制作したゲーム「IGC2 3D Game Exhibition」を公開。2021のWorks欄から遊べます</p>
-          <p>・2021/04/27 - Web新歓でサークル紹介用動画を配信</p>
-          <p>・2021/04/08 - 3D Game Kitを使い、サークル内で複数のステージを制作し、パブリッシュ</p>
-          <p>・2020/11/05 - 2020年のWorks欄を更新</p>
-          <p class="header">・[<font color="#4682b4" style="font-weight: 900;">告知</font>]2020/10/31-11/1<br><font color="orange" style="font-weight: 900;">INIAD GAME SHOW 2020</font><br>INIAD-FES 2020にてサークルの作品展を催しています。<br>ぜひお越しください!!</p>
-          <p>・2020/06/10 - コンテンツ更新</p>
-          <p>・2020/06/07 - ホームページ新設</p>
-        </div>
-        <div class="blank"></div>
-        <!---->
-        <h3>サークル紹介動画</h3><br>
-        <div class="main-visual">
-          <iframe id="video" 
-            src="https://www.youtube.com/embed/ap6U1MgXBqM" frameborder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
-        </div>
-        <div class="blank"></div>
-        <h3>About IGC2</h3>
-        <div class="sentence">
-          <p class="header">IGC2は東洋大学 情報連携学部 INIAD の公認ゲーム制作サークルです。</p>
-          <p>サークル参加希望はContactより受け付けております。</p>
-          <p>詳細はAboutをご覧ください。</p>
-        </div>
-
-        <div class="blank"></div>
-        <!---->
-        <div class="main-visual">
-          <img id="main-illustration" src="/img/title/illustration.jpg">
+        <div class="fadeIn verticalInsideShadow">
+            <img style="width: 100%;" src="/img/other/INIADGAMESHOW2023_Poster_Sp.webp" alt="I G C 2 poster">
         </div>
         
-      </section>
+        <br>
+        
+        <div class="doubleGrid">
+        <!--<div class="centerGrid">-->
 
-    </main>
+            <div class="gridBox1">
+                <div class="centerBlock">
+                    <h1>About IGC² <div class="heading"></div><div class="heading2"></div></h1>
+                    <p>IGC²は東洋大学 情報連携学部 INIAD の公認ゲーム制作サークルです。</p>
+                    <p>サークル参加希望は<a href="/html/ContactIGC2.html" aria-label="Go to contact">Contact</a>より受け付けております。</p>
+                    <p>詳細は<a href="/html/AboutIGC2.html" aria-label="Go to about I G C 2">About</a>をご覧ください。</p>
+                </div>
+                <!--
+                <div class="centerBlock">
+                    <h1>NEWS <div class="heading"></div><div class="heading2"></div></h1>
+                    <div style="max-height: 240px;" class="scrollView NewsHeaderList">
+                        </!--News--/>
+                    </div>
+                </div>
+                -->
+                <div class="centerBlock">
+                    <h1>サークル紹介動画 <div class="heading"></div><div class="heading2"></div></h1>
+                    <div class="video">
+                        <iframe src="https://www.youtube.com/embed/pe7zguO2hIU" frameborder="0" 
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+                        </iframe>
+                    </div>
+                </div>
 
-    
+            </div>
+            
+            <div class="gridBox2">
+                <div class="centerBlock">
+                    <h1>X (旧Twitter) <div class="heading"></div><div class="heading2"></div></h1>
+                    <div style="max-height: 480px;" class="scrollView">
 
-    <footer id="global-footer">
-      <!-- フッター -->
-      <h3>IGC² 2022</h3>
+                        <a class="twitter-timeline" data-width="80vw" data-theme="dark" href="https://twitter.com/igc2_iniad?ref_src=twsrc%5Etfw">Tweets by igc2_iniad</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <!--
+        <div class="singleGrid">
+            <div class="centerBlock">
+                <h1>なんか中央にどーんと置きたいとき <div class="heading"></div><div class="heading2"></div></h1>
+                <p>1</p>
+                <p>2</p>    
+                <p>3</p>
+            </div>
+        </div>
+        -->
+
+    </div><!--Body-->
+
+    <footer id="Footer">
+        <!--<p>IGC² xxxx</p>-->
     </footer>
 
-  </div>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><!--X(Twitter)の機能を利用-->
 
+    <script type="text/javascript"> LoadCommonData(); </script><!--body最後に実行-->
+    
+    <!--<script type="text/javascript" src="/js/news.js"></script>--><!--newsロード-->
 </body>
 
 </html>

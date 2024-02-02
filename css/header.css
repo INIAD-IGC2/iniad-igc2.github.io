@@ -1,0 +1,157 @@
+
+
+
+
+
+
+header {
+    position: fixed;
+    background-color: var(--BackgroundColor);
+    border-color: var(--BorderColor);
+    color: var(--Color);
+    top: 0%;
+    width: 100%;
+    height: var(--HeaderHeight);
+    margin: 0px;
+    padding: 0px;
+    z-index: 100;
+    border-bottom: solid 2px;
+}
+#HeaderIcon {
+    position: absolute;
+    left: var(--HeaderHeight);
+    height: calc(var(--HeaderHeight) - 10px);
+    /*width: 50px;*/
+}
+#HeaderContent {
+    padding: 4px;
+}
+.headerFadeIn{
+    animation: headerfadein 0.75s 1 ease-in-out;
+}
+@keyframes headerfadein {
+    0% {
+        opacity: 0;
+        transform: translateY(calc(var(--HeaderHeight) * -1));
+    } 
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+  }
+
+/*Headerのハンバーガーメニューの開閉を行うボタン*/
+#HamburgerButton{
+    position: absolute;
+    width: calc(var(--HeaderHeight) - 15px);
+    height: calc(var(--HeaderHeight) - 15px);
+    left: 8px;
+    top: 7px;
+    background-color: #00000000;
+}
+
+/*ハンバーガーメニューの中身のボタン*/
+.HamburgerContentButton{
+    display: inline-block;
+    width: 100%;
+    height: var(--HamburgerContentButtonHeight);
+    background-color: #00000000;
+    color: var(--DisableColor);
+    font-size: var(--HamburgerContentFontSize);
+    text-align: left;
+}
+.HamburgerContentButton > p{
+    margin: 13px 0px 13px 13px;
+}
+.HamburgerContentButton:hover{
+    color: var(--Color);
+    background-color: var(--HoverButtonColor);
+}
+
+/*ハンバーガーメニューの中身*/
+#HamburgerContent{
+    position: fixed;
+    top: var(--HeaderHeight);
+    bottom: 0%;
+    width: 100%;
+    max-width: 450px;
+    background-color: var(--BackgroundColor);
+    border-right: solid 2px var(--BorderColor);
+    overflow-y: auto;
+}
+#HeaderMain.Open #HamburgerContent{
+    transform: translate(-2px,0px);
+    transition: transform .3s; 
+}
+#HeaderMain.Close #HamburgerContent{
+    transform: translate(calc(-100% + 2px),0px);
+    transition: transform .3s; 
+}
+#HamburgerContent::-webkit-scrollbar {
+    width: 8px;
+}
+#HamburgerContent::-webkit-scrollbar-track {
+    background-color: var(--ScrollbarTrackColor);
+}
+#HamburgerContent::-webkit-scrollbar-thumb {
+    background-color: var(--ScrollbarThumbColor);
+    border-radius: 100px;
+}
+#HamburgerContent::-webkit-scrollbar-thumb:hover {
+    background-color: var(--ScrollbarThumbHoverColor);
+}
+
+/*Headerのハンバーガーメニューのボタンの中の線*/
+.hbline{
+    position: absolute;
+    right: 0%;
+    width: 100%;
+    height: 3px;
+    background-color: var(--BorderColor);
+}
+#HeaderMain.Open #hbline1{
+    transform: translate(0px,-7px);
+    background-color: #00000000;
+    transition: all 0.3s 0s ease;
+}
+#HeaderMain.Open #hbline3{
+    transform: translate(0px,7px);
+    background-color: #00000000;
+    transition: all 0.3s 0s ease;
+}
+#HeaderMain.Open #hbline2_1{
+    transform: rotate(135deg);
+    transition: all 0.3s 0s ease;
+}
+#HeaderMain.Open #hbline2_2{
+    transform: rotate(225deg);
+    transition: all 0.3s 0s ease;
+}
+#HeaderMain.Close #hbline1{
+    transform: translate(0px,0px);
+    transition: all 0.3s 0s ease;
+}
+#HeaderMain.Close #hbline3{
+    transform: translate(0px,0px);
+    transition: all 0.3s 0s ease;
+}
+#HeaderMain.Close #hbline2_1{
+    transform: rotate(0deg);
+    transition: all 0.3s 0s ease;
+}
+#HeaderMain.Close #hbline2_2{
+    transform: rotate(0deg);
+    transition: all 0.3s 0s ease;
+}
+#hbline1{
+    top: 20%
+}
+#hbline2_1{
+    top: 50%;
+}
+#hbline2_2{
+    top: 50%;
+}
+#hbline3{
+    top: 80%;
+}

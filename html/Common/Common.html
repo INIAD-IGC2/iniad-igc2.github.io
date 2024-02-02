@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<!--他HTMLでも用いる素材を入れる-->
+
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/IGC2AppleTouchIcon.jpg"><!--ページをスマホのホーム画面に追加したときの画像-->
+    <link rel="stylesheet" type="text/css" href="/css/variables.css"><!--変数-->
+    <link rel="stylesheet" type="text/css" href="/css/header.css"><!--ヘッダー-->
+    <link rel="stylesheet" type="text/css" href="/css/main.css"><!--汎用-->
+    <script type="text/javascript" src="/js/main.js"></script>
+    
+    <title>Common/IGC²</title>
+</head>
+
+
+<body>
+    
+    <div id="loading"><img src="/img/UI/Loading.webp" alt="loading image" id="loadingRoter" class="UIImg"><h3 id="loadingText">Now Loading...</h3></div>
+
+    <!--Body-->
+    <div id="BodyContent">
+        
+    </div>
+
+    <!--Header-->
+    <header id="HeaderMain" class="Close headerFadeIn">
+
+        <div id="HeaderContent">
+            <a href="/index.html" aria-label="Go to main page" ><img src="/img/Icon/IGC2_logo_Shadow_High.webp" alt="" id="HeaderIcon"></a>
+            <!--ハンバーガーメニューのボタン-->
+            <button id="HamburgerButton" aria-label="Hamburger Menu Button" onclick="ClickToggleButton('HeaderMain')">
+                <span class="hbline" id="hbline1"></span>
+                <span class="hbline" id="hbline2_1"></span>
+                <span class="hbline" id="hbline2_2"></span>
+                <span class="hbline " id="hbline3"></span>
+            </button>
+        </div>
+        <!--メニューの中身-->
+        <div id="HamburgerContent">
+
+        </div>
+
+    </header>
+
+    <div>
+        <!--メニューのボタンのオリジナル URL,Text-->
+        <div id="HamburgerContentButtonOriginal">
+            <a href="{0}" aria-label="{2}"><div class="HamburgerContentButton"><p>{1}</p></div></a>
+        </div>
+
+        <!--メニューのドロップダウンのオリジナル ID,Text,Content-->
+        <div id="HamburgerContentDropDownOriginal">
+            <div class="Dropdown Close" style="width: 100%;" id="{0}">
+                <div class="HamburgerContentButton" onclick="ClickToggleButton('{0}')"><p>{1}</p></div>
+                <img src="/img/UI/DropdownArrow128.webp" alt="" width="20px" class="UIImg DropdownArrow">
+                {2}
+            </div>
+        </div>
+
+        <!--メニューのドロップダウンの中身 URL,Text-->
+        <div id="HamburgerContentDropDownContentOriginal">
+            <a href="{0}" aria-label="{2}"><div class="DropdownContent"><p>{1}</p></div></a>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <!-- クリックしたら画像変わる奴 -->
+
+    <img class="ImageAndVideoChangeScreen" src="{0}" alt="{1}">
+
+    <img class="ImageChangeButton" src="{0}" alt="{1}">
+
+    <div class="ClickImageChanger">
+        <div class="video">
+            <!--<img class="ImageAndVideoChangeScreen" src="{0}" alt="{1}">-->
+        </div>
+        <div class="scrollView" style="white-space: nowrap;">
+            <!--<img class="ImageChangeButton" src="{0}" alt="{1}">-->
+        </div>
+    </div>
+
+    <iframe
+    src="{0}"
+    frameborder="0"
+    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+    class="youtubeiframe"
+    ></iframe>
+
+    <div class="ClickImageAndVideoChanger">
+        <div class="video">
+            <!--<iframe
+            src="{0}"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+            class="youtubeiframe"
+            ></iframe>-->
+            <!--<img class="ImageAndVideoChangeScreen" src="{0}" alt="{1}">-->
+        </div>
+        <div class="scrollView" style="white-space: nowrap;">
+            <!--<img class="ImageChangeButton" src="{0}" alt="{1}">-->
+        </div>
+    </div>
+
+    
+    <script type="text/javascript"> LoadCommonData(); </script><!--body最後に実行-->
+</body>
+
+</html>
