@@ -230,6 +230,19 @@ img{
 .right{
     text-align: right;
 }
+.flex
+{
+    display: flex;
+    flex-direction: column;
+}
+.flexdown{
+    /*display: flex;
+    align-items: flex-end;*/
+    margin-top: auto;
+}
+.noMargin{
+    margin: 0px;
+}
 .pageTitle{
     position: absolute;
     top: 0%;
