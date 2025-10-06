@@ -14,6 +14,7 @@ function SetPage()
     worksDropdown.AddContent("/html/works/Works2021.html", "2021", "Works of 2021");
     worksDropdown.AddContent("/html/works/Works2022.html", "2022", "Works of 2022");
     worksDropdown.AddContent("/html/works/Works2023.html", "2023", "Works of 2023");
+    worksDropdown.AddContent("/html/works/Works2024.html", "2024", "Works of 2024");
     worksDropdown.ConstructDropdown();
     AddHamburgerMenuButton("/games.html", "Games", "games");
     AddHamburgerMenuButton("/html/ContactIGC2.html", "Contact", "Contact I G C 2");
