@@ -46,7 +46,7 @@ header.loaded {
   font-size: clamp(16px, 10vw, 100px);
   font-weight: bold;
   color: #fff;
-  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   letter-spacing: 0.02em;
   text-align: left;
   line-height: 0.95;
