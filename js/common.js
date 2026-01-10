@@ -6,7 +6,6 @@ const VIDEO_PLACEHOLDER =
 
 class LayoutManager {
   constructor() {
-    this.rootName = "/IGC2";
     this.isMenuOpen = false;
     this.cssActiveClass = "-active";
 
@@ -24,35 +23,22 @@ class LayoutManager {
     this.handlePageLoad();
   }
 
-  getPathPrefix() {
-    const path = location.pathname.replace(/\\/g, "/");
-    const idx = path.indexOf(this.rootName);
-    if (idx === -1) return path.includes("/works/") ? "../" : "";
-
-    const parts = path
-      .slice(idx + this.rootName.length)
-      .split("/")
-      .filter(Boolean);
-    return "../".repeat(Math.max(0, parts.length - 1));
-  }
 
   renderHeader() {
-    const nowYear = 2025; //現在の年
-
-    const p = this.getPathPrefix();
-    const years = Array.from({ length: nowYear - 2017 }, (_, i) => nowYear - i);
-    const yearLinks = years.map((y) => `<li><a href="${p}works/${y}.html" class="accordion__link">${y}</a></li>`).join("");
+    const nowYear = 2025; 
+    // パスを全て / から始まるルート相対パスに固定
+    const years = Array.from({ length: nowYear - 2017 + 1 }, (_, i) => nowYear - i);
+    const yearLinks = years.map((y) => `<li><a href="/works/${y}.html" class="accordion__link">${y}</a></li>`).join("");
 
     const navFooterHTML = `
       <div class="global-navigation__footer">
         <div class="nav-footer-logo">
-          <a href="${p}index.html">
-            <img src="${p}img/IGC2_logo_shadow_128.webp" alt="IGC2 Logo">
+          <a href="/index.html">
+            <img src="/img/IGC2_logo_shadow_128.webp" alt="IGC2 Logo">
           </a>
         </div>
-        <p class="nav-footer-text">IGC² 2025</p>
+        <p class="nav-footer-text">IGC² ${nowYear}</p>
       </div>
-
     `;
 
     const headerHTML = `
@@ -65,21 +51,20 @@ class LayoutManager {
           <div class="header__nav-area js-nav-area" id="navigation">
             <nav id="js-global-navigation" class="global-navigation">
               <ul class="global-navigation__list">
-                <li><a href="${p}index.html" class="global-navigation__link">TOP</a></li>
-                <li><a href="${p}about.html" class="global-navigation__link">IGC²とは？</a></li>
+                <li><a href="/index.html" class="global-navigation__link">TOP</a></li>
+                <li><a href="/about.html" class="global-navigation__link">IGC²とは？</a></li>
                 <li>
                   <button type="button" class="global-navigation__link -accordion js-sp-accordion-trigger" aria-expanded="false" aria-controls="accordion1">制作物</button>
                   <div id="accordion1" class="accordion js-accordion">
                     <ul class="accordion__list">
-                      <li><a href="${p}works/recommend.html" class="accordion__link">厳選作品</a></li>
+                      <li><a href="/works/recommend.html" class="accordion__link">厳選作品</a></li>
                       ${yearLinks}
                     </ul>
                   </div>
                 </li>
-                <li><a href="${p}faq.html" class="global-navigation__link">FAQ</a></li>
-                <li><a href="${p}contact.html" class="global-navigation__link">入会希望・コンタクト</a></li>
+                <li><a href="/faq.html" class="global-navigation__link">FAQ</a></li>
+                <li><a href="/contact.html" class="global-navigation__link">入会希望・コンタクト</a></li>
               </ul>
-              
               ${navFooterHTML} <div id="js-focus-trap" tabindex="0"></div>
             </nav>
           </div>
