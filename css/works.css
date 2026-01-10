@@ -1,0 +1,321 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   変数定義（色の一元管理）
+   ========================================================================== */
+:root {
+  --text-primary: #3b4a6d;
+  /* 見出し等の濃い青 */
+  --text-secondary: #555;
+  /* 本文 */
+  --text-muted: #888;
+  /* 日付等の薄いグレー */
+  --accent-color: #626be5;
+  /* リンク、ボタン、強調色 */
+  --bg-color: rgba(222, 222, 222, 0.95);
+  --card-bg: #fff;
+}
+
+/* ==========================================================================
+   全体の基本設定
+   ========================================================================== */
+body {
+  margin: 0;
+  min-height: 100%;
+  background-image: linear-gradient(135deg, #dedede, #b5e0e0);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  background-color: transparent;
+}
+
+/* --- 大見出し (年度) --- */
+main h1 {
+  background: var(--card-bg);
+  padding: 10px 20px;
+  border-radius: 2px;
+  text-align: center;
+  font-size: 2.2rem;
+  margin: 0 auto 30px;
+  max-width: 1200px;
+  color: var(--text-primary);
+  letter-spacing: 0.1em;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* フェードイン効果 */
+main.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+main.fade-in.loaded {
+  opacity: 1;
+}
+
+/* ==========================================================================
+   作品カード（外枠）
+   ========================================================================== */
+.work-card {
+  background: var(--card-bg);
+  border-radius: 2px;
+  padding: 40px;
+  margin: 0 auto 10px;
+  max-width: 1200px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+/* カラムの共通設定 */
+.work-info,
+.gallery-wrapper {
+  max-width: 100%;
+  min-width: 300px;
+}
+
+/* ==========================================================================
+   左側：情報エリア
+   ========================================================================== */
+.work-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.work-info h2 {
+  font-size: 1.9rem;
+  margin: 0 0 10px;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.work-info h3 {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  font-weight: normal;
+  margin: 0 0 20px;
+  letter-spacing: 0.05em;
+}
+
+.description {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: var(--text-secondary);
+  margin-bottom: 30px;
+}
+
+/* リンク色を統合 */
+.creator-link,
+.view-on-other-site {
+  color: var(--accent-color);
+  text-decoration: none;
+}
+
+.btn-play {
+  margin-top: auto;
+  align-self: flex-start;
+  display: inline-flex;
+  align-items: center;
+  background: var(--accent-color);
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 32px;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-play:hover {
+  transform: translateY(-2px);
+}
+
+.btn-play .icon {
+  margin-left: 10px;
+  font-size: 0.8em;
+}
+
+/* ==========================================================================
+   統合ギャラリー (画像 + 動画)
+   ========================================================================== */
+
+.gallery-wrapper {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* --- メイン画像/動画 表示エリア --- */
+.gallery-main-view {
+  width: 100%;
+  margin-bottom: 12px;
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  aspect-ratio: 16 / 9;
+  position: relative;
+}
+
+.gallery-main-view img,
+.gallery-main-view iframe {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gallery-main-view img {
+  object-fit: contain;
+}
+
+.gallery-main-view iframe {
+  border: none;
+}
+
+/* ==========================================================================
+   サムネイルエリア（矢印付き）
+   ========================================================================== */
+
+/* サムネイルと矢印を横並びにするコンテナ */
+.thumbs-nav-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* サムネイルのスクロール領域 */
+.gallery-thumbnails {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 5px;
+  -ms-overflow-style: none;
+  /* IE, Edge */
+  scrollbar-width: none;
+  /* Firefox */
+  flex: 1;
+  scroll-behavior: smooth;
+}
+
+.gallery-thumbnails::-webkit-scrollbar {
+  display: none;
+  /* Chrome, Safari */
+}
+
+/* 矢印ボタンのデザイン */
+.nav-arrow {
+  width: 30px;
+  height: 67px;
+  background-color: #f0f0f0;
+  border: none;
+  border-radius: 4px;
+  color: var(--text-secondary);
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  /* 元コードで重複していたので1つに統一 */
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s, color 0.2s;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.nav-arrow:hover {
+  background-color: #dbe0f5;
+  color: var(--accent-color);
+}
+
+.nav-arrow:active {
+  transform: scale(0.95);
+}
+
+/* サムネイル個別の枠 */
+.thumb-item {
+  width: 120px;
+  height: 67px;
+  flex-shrink: 0;
+  cursor: pointer;
+  position: relative;
+  border-radius: 4px;
+  overflow: hidden;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  box-sizing: border-box;
+}
+
+.thumb-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ホバー時と選択時 */
+.thumb-item:hover {
+  opacity: 0.8;
+}
+
+.thumb-item.-selected {
+  opacity: 1;
+  border-color: var(--accent-color);
+}
+
+/* 動画アイコン */
+.thumb-item.-video::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 20px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+  pointer-events: none;
+}
+
+/* ==========================================================================
+   スマホ対応
+   ========================================================================== */
+@media (max-width: 860px) {
+  .work-card {
+    flex-direction: column;
+    padding: 25px;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+
+  .work-info,
+  .gallery-wrapper {
+    width: 100%;
+    flex: none;
+  }
+
+  .description {
+    font-size: 1rem;
+  }
+
+  .btn-play {
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+}

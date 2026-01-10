@@ -1,101 +1,35 @@
-
 <!DOCTYPE html>
-
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/IGC2AppleTouchIcon.jpg"><!--ページをスマホのホーム画面に追加したときの画像-->
+    <title>IGC2 - HOME</title>
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
 
-    <link rel="stylesheet" type="text/css" href="/css/variables.css"><!--変数-->
-    <link rel="stylesheet" type="text/css" href="/css/header.css"><!--ヘッダー-->
-    <link rel="stylesheet" type="text/css" href="/css/main.css"><!--汎用-->
-    <script type="text/javascript" src="/js/main.js"></script>
-
-    <title>Home/IGC²</title>
-</head>
-
-<body>
-
-    <header id="HeaderMain" class="Close headerFadeIn"></header>
-
-    <div id="loading"><img src="/img/UI/Loading.webp" alt="loading image" id="loadingRoter" class="UIImg"><h3 id="loadingText">Now Loading...</h3></div>
-
-    <div id="BodyContent"><!--Body-->
-
-        <div class="fadeIn verticalInsideShadow">
-            <img style="width: 100%;" src="/img/other/INIADGAMESHOW2023_Poster_Sp.webp" alt="I G C 2 poster">
+  <body>
+    <main class="fade-in">
+      <div class="footer-wrapper">
+        <div class="footer-text">
+          INIAD<br />
+          GAME<br />
+          CREATORS<br />
+          CIRCLE<br />
+          <span class="igc">" IGC² "</span>
         </div>
-        
-        <br>
-        
-        <div class="doubleGrid">
-        <!--<div class="centerGrid">-->
-
-            <div class="gridBox1">
-                <div class="centerBlock">
-                    <h1>About IGC² <div class="heading"></div><div class="heading2"></div></h1>
-                    <p>IGC²は東洋大学 情報連携学部 INIAD の公認ゲーム制作サークルです。</p>
-                    <p>サークル参加希望は<a href="/html/ContactIGC2.html" aria-label="Go to contact">Contact</a>より受け付けております。</p>
-                    <p>詳細は<a href="/html/AboutIGC2.html" aria-label="Go to about I G C 2">About</a>をご覧ください。</p>
-                </div>
-                <!--
-                <div class="centerBlock">
-                    <h1>NEWS <div class="heading"></div><div class="heading2"></div></h1>
-                    <div style="max-height: 240px;" class="scrollView NewsHeaderList">
-                        </!--News--/>
-                    </div>
-                </div>
-                -->
-                <div class="centerBlock">
-                    <h1>サークル紹介動画 <div class="heading"></div><div class="heading2"></div></h1>
-                    <div class="video">
-                        <iframe src="https://www.youtube.com/embed/pe7zguO2hIU" frameborder="0" 
-                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-                        </iframe>
-                    </div>
-                </div>
-
-            </div>
-            
-            <div class="gridBox2">
-                <div class="centerBlock">
-                    <h1>X (旧Twitter) <div class="heading"></div><div class="heading2"></div></h1>
-                    <div style="max-height: 480px;" class="scrollView">
-
-                        <a class="twitter-timeline" data-width="80vw" data-theme="dark" href="https://twitter.com/igc2_iniad?ref_src=twsrc%5Etfw">Tweets by igc2_iniad</a>
-                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-                    </div>
-                </div>
-            </div>
-
-        </div>
-        
-        <!--
-        <div class="singleGrid">
-            <div class="centerBlock">
-                <h1>なんか中央にどーんと置きたいとき <div class="heading"></div><div class="heading2"></div></h1>
-                <p>1</p>
-                <p>2</p>    
-                <p>3</p>
-            </div>
-        </div>
-        -->
-
-    </div><!--Body-->
-
-    <footer id="Footer">
-        <!--<p>IGC² xxxx</p>-->
-    </footer>
-
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><!--X(Twitter)の機能を利用-->
-
-    <script type="text/javascript"> LoadCommonData(); </script><!--body最後に実行-->
-    
-    <!--<script type="text/javascript" src="/js/news.js"></script>--><!--newsロード-->
-</body>
-
+        <div class="sub-text">東洋大学情報連携学部 ゲーム制作サークル</div>
+      </div>
+    </main>
+    <script src="js/common.js"></script>
+    <script>
+      window.addEventListener("load", function () {
+        document.body.classList.add("loaded");
+        document.querySelector("header").classList.add("loaded");
+        document.querySelector("main").classList.add("loaded");
+      });
+    </script>
+  </body>
 </html>

@@ -1,0 +1,109 @@
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  background-image: url("../img/IGC2_top.jpg");
+  background-size: cover;
+  background-position: top center;
+  background-repeat: no-repeat;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+body.loaded::before {
+  opacity: 1;
+}
+
+header {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+header.loaded {
+  opacity: 1;
+}
+
+.footer-wrapper {
+  position: fixed;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  z-index: 1;
+  pointer-events: none;
+}
+
+.footer-text {
+  font-family: Impact, sans-serif;
+  font-size: clamp(16px, 10vw, 100px);
+  font-weight: bold;
+  color: #fff;
+  /* text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); */
+  letter-spacing: 0.02em;
+  text-align: left;
+  line-height: 0.95;
+  flex-shrink: 0;
+  letter-spacing: 0.07em;
+}
+
+.footer-text .igc {
+  display: block;
+  font-size: 0.9em;
+}
+
+.sub-text {
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: clamp(12px, 2vw, 48px);
+  opacity: 0.95;
+  white-space: nowrap;
+
+  transform: translateY(-10%);
+
+  text-align: right;
+  margin-left: 0;
+}
+
+@media (max-height: 700px) {
+  body {
+    background-size: auto 100%;
+    background-position: top center;
+  }
+
+  .footer-wrapper {
+    bottom: 10px;
+    padding: 0 10px;
+  }
+  .footer-text {
+    font-size: clamp(12px, 8vw, 80px);
+  }
+}
+
+@media (max-width: 480px) {
+  .footer-wrapper {
+    padding: 0 10px;
+  }
+
+  .sub-text {
+    font-size: clamp(8px, 2vw, 12px);
+    transform: translateY(-4%);
+  }
+}
+
+/* フェードイン効果 */
+main.fade-in {
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+main.fade-in.loaded {
+  opacity: 1;
+}

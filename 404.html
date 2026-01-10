@@ -1,47 +1,39 @@
-
 <!DOCTYPE html>
-
 <html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="/favicon.ico">
-    <link rel="apple-touch-icon" href="/IGC2AppleTouchIcon.jpg"><!--ページをスマホのホーム画面に追加したときの画像-->
-    <link rel="stylesheet" type="text/css" href="/css/variables.css"><!--変数-->
-    <link rel="stylesheet" type="text/css" href="/css/header.css"><!--ヘッダー-->
-    <link rel="stylesheet" type="text/css" href="/css/main.css"><!--汎用-->
-    <script type="text/javascript" src="/js/main.js"></script>
+    <title>IGC2 - 404</title>
+    <link rel="stylesheet" href="css/hamburger.css" />
+    <link rel="stylesheet" href="css/works.css" />
+  </head>
 
-    <title>404/IGC²</title>
-</head>
-
-<body id="body">
-
-    <header id="HeaderMain" class="Close headerFadeIn"></header>
-
-    <div id="loading"><img src="/img/UI/Loading.png" alt="loading image" id="loadingRoter" class="UIImg"><h3 id="loadingText">Now Loading...</h3></div>
-
-    <div id="BodyContent"><!--メインここから-->
-
-    <!--なんか内容-->
-    
-    <br>
-    <br>
-    <div class="centerGrid">
-        <div class="centerBlock fadeIn">
-            <h1>ページが見つかりませんでした。</h1>
-            <p>ページが移動した、または削除された可能性があります。</p>
-        </div>
-    </div>
-
-    </div><!--メインここまで-->
-
-    <footer>
-        <p>IGC² 2023</p>
-    </footer>
-
-    <script type="text/javascript"> LoadCommonData(); </script><!--body最後に実行-->
-</body>
-
+  <body>
+    <main>
+      <div
+        style="
+          text-align: center;
+          background: var(--card-bg);
+          padding: 10px 20px;
+          border-radius: 2px;
+          text-align: center;
+          margin: 0 auto 30px;
+          max-width: 1200px;
+          color: var(--text-primary);
+          /* letter-spacing: 0.1em; */
+          position: relative;
+          box-sizing: border-box;
+        "
+      >
+        <h2 style="letter-spacing: 0.1em;">ページが見つかりませんでした</h2>
+        <p>お探しのページは削除されたか、移動した可能性があります。</p>
+        <p><a class="view-on-other-site" href="./index.html">トップに戻る</a></p>
+        <br/>
+        <p style="color: #c9c6c6;" >IGC² 2025</p>
+      </div>
+    </main>
+    <script src="js/common.js"></script>
+  </body>
 </html>
