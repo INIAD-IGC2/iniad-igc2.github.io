@@ -26,8 +26,7 @@ class LayoutManager {
 
   renderHeader() {
     const nowYear = 2025; 
-    // パスを全て / から始まるルート相対パスに固定
-    const years = Array.from({ length: nowYear - 2017 + 1 }, (_, i) => nowYear - i);
+    const years = Array.from({ length: nowYear - 2018 + 1 }, (_, i) => nowYear - i);
     const yearLinks = years.map((y) => `<li><a href="/works/${y}.html" class="accordion__link">${y}</a></li>`).join("");
 
     const navFooterHTML = `
