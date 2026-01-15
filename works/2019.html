@@ -26,7 +26,7 @@
           </a>
         </div>
         <div class="work-gallery">
-          <div class="js-work-video" style="display: none">https://www.youtube.com/embed/70HRqR8na4Y</div>
+          <div class="js-work-video" style="display: none" data-thumb="/img/works/2019/EgoInAComa/EgoInAComa_Youtube.jpg">https://www.youtube.com/embed/70HRqR8na4Y</div>
           <img src="/img/works/2019/EgoInAComa/EgoInAComa_01.jpg" alt="EGO IN A COMA Title" />
           <img src="/img/works/2019/EgoInAComa/EgoInAComa_02.jpg" alt="EGO IN A COMA ScreenShot 1" />
           <img src="/img/works/2019/EgoInAComa/EgoInAComa_03.jpg" alt="EGO IN A COMA ScreenShot 2" />
@@ -90,9 +90,8 @@
     </main>
     <script src="/js/common.js"></script>
     <script>
-      window.addEventListener("load", function () {
+      document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("loaded");
-        document.querySelector("main").classList.add("loaded");
       });
     </script>
   </body>

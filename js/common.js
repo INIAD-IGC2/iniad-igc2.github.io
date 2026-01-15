@@ -23,9 +23,8 @@ class LayoutManager {
     this.handlePageLoad();
   }
 
-
   renderHeader() {
-    const nowYear = 2025; 
+    const nowYear = 2025;
     const years = Array.from({ length: nowYear - 2018 + 1 }, (_, i) => nowYear - i);
     const yearLinks = years.map((y) => `<li><a href="/works/${y}.html" class="accordion__link">${y}</a></li>`).join("");
 
@@ -228,7 +227,7 @@ class LayoutManager {
       if (media.type === "image") {
         img.src = media.src;
       } else {
-        img.src = media.thumb || (media.type === "youtube" ? `https://img.youtube.com/vi/${media.id}/mqdefault.jpg` : VIDEO_PLACEHOLDER);
+        img.src = media.thumb || VIDEO_PLACEHOLDER;
         thumb.classList.add("-video");
       }
       img.alt = "thumbnail";

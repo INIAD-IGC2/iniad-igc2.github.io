@@ -26,7 +26,7 @@
           </p>
         </div>
         <div class="work-gallery">
-          <div class="js-work-video" style="display: none">https://www.youtube.com/embed/gk8ml5k7XU8</div>
+          <div class="js-work-video" style="display: none" data-thumb="/img/works/2024/Subway/Subway_Youtube.jpg">https://www.youtube.com/embed/gk8ml5k7XU8</div>
           <img src="/img/works/2024/Subway/Subway.jpg" alt="プレイ画面1" />
         </div>
       </article>
@@ -81,10 +81,8 @@
     </main>
     <script src="/js/common.js"></script>
     <script>
-      window.addEventListener("load", function () {
+      document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("loaded");
-        document.querySelector("header").classList.add("loaded");
-        document.querySelector("main").classList.add("loaded");
       });
     </script>
   </body>

@@ -68,7 +68,7 @@
         </div>
         <div class="work-gallery">
           <img src="/img/works/2023/Subthreshold_object/HWGame_ChargeAttack.jpg" alt="プレイ画面1" />
-          <div class="js-work-video" style="display: none">https://www.youtube.com/embed/xLBrGMIcJY4</div>
+          <div class="js-work-video" style="display: none" data-thumb="/img/works/2023/Subthreshold_object/Subthreshold_Youtube.jpg">https://www.youtube.com/embed/xLBrGMIcJY4</div>
           <img src="/img/works/2023/Subthreshold_object/HWGame_Image.jpg" alt="プレイ画面2" />
           <img src="/img/works/2023/Subthreshold_object/HWGame_Skback.jpg" alt="プレイ画面3" />
           <img src="/img/works/2023/Subthreshold_object/HWGame_ExperimentScenePhoto.jpg" alt="プレイ画面4" />
@@ -90,7 +90,7 @@
         </div>
         <div class="work-gallery">
           <img src="/img/works/2023/Winning-Ticket/FreestylerWinning-Ticket_Sumbnail.jpg" alt="プレイ画面1" />
-          <div class="js-work-video" style="display: none">https://www.youtube.com/embed/FBRvnpRA6u4</div>
+          <div class="js-work-video" style="display: none" data-thumb="/img/works/2023/Winning-Ticket/Winning-Ticket_Youtube.jpg">https://www.youtube.com/embed/FBRvnpRA6u4</div>
         </div>
       </article>
 
@@ -148,7 +148,7 @@
           </p>
         </div>
         <div class="work-gallery">
-          <div class="js-work-video" style="display: none">https://www.youtube.com/embed/fGCgz9Zsn2A</div>
+          <div class="js-work-video" style="display: none" data-thumb="/img/works/2023/blue_robot/bluRobot_Youtube.jpg">https://www.youtube.com/embed/fGCgz9Zsn2A</div>
           <img src="/img/works/2023/blue_robot/bluRobot_samune.jpg" alt="プレイ画面1" />
         </div>
       </article>
@@ -172,10 +172,8 @@
     </main>
     <script src="/js/common.js"></script>
     <script>
-      window.addEventListener("load", function () {
+      document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("loaded");
-        document.querySelector("header").classList.add("loaded");
-        document.querySelector("main").classList.add("loaded");
       });
     </script>
   </body>

@@ -27,7 +27,9 @@
         </div>
         <div class="work-gallery">
           <img src="/img/works/2025/NoNameMech/NoNameMech_1.jpg" alt="プレイ画面" />
-          <div class="js-work-video" style="display: none">https://www.youtube.com/embed/dJSMfq4JyiE</div>
+          <div class="js-work-video" style="display: none" data-thumb="/img/works/2025/NoNameMech/NoNameMech_Youtube.jpg">
+            https://www.youtube.com/embed/dJSMfq4JyiE
+          </div>
           <img src="/img/works/2025/NoNameMech/NoNameMech_2.jpg" alt="プレイ画面" />
           <img src="/img/works/2025/NoNameMech/NoNameMech_3.jpg" alt="プレイ画面" />
           <img src="/img/works/2025/NoNameMech/NoNameMech_4.jpg" alt="プレイ画面" />
@@ -130,10 +132,8 @@
     </main>
     <script src="/js/common.js"></script>
     <script>
-      window.addEventListener("load", function () {
+      document.addEventListener("DOMContentLoaded", () => {
         document.body.classList.add("loaded");
-        document.querySelector("header").classList.add("loaded");
-        document.querySelector("main").classList.add("loaded");
       });
     </script>
   </body>
