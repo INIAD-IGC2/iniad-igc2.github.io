@@ -270,8 +270,12 @@ class LayoutManager {
       document.querySelector("header")?.classList.add("loaded");
       document.querySelector("main")?.classList.add("loaded");
     };
-    if (document.readyState === "complete") onLoaded();
-    else window.addEventListener("load", onLoaded);
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", onLoaded);
+    } else {
+      onLoaded();
+    }
   }
 }
 
