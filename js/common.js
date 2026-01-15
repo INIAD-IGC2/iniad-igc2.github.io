@@ -266,9 +266,13 @@ class LayoutManager {
 
   handlePageLoad() {
     const onLoaded = () => {
-      document.body.classList.add("loaded");
-      document.querySelector("header")?.classList.add("loaded");
-      document.querySelector("main")?.classList.add("loaded");
+      setTimeout(() => {
+        requestAnimationFrame(() => {
+          document.body.classList.add("loaded");
+          document.querySelector("header")?.classList.add("loaded");
+          document.querySelector("main")?.classList.add("loaded");
+        });
+      }, 300);
     };
 
     if (document.readyState === "loading") {
@@ -277,6 +281,7 @@ class LayoutManager {
       onLoaded();
     }
   }
+
 }
 
 new LayoutManager();
