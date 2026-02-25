@@ -35,7 +35,7 @@ class LayoutManager {
             <img src="/img/IGC2_logo_shadow_128.webp" alt="IGC2 Logo">
           </a>
         </div>
-        <p class="nav-footer-text">IGC² ${nowYear}</p>
+        <p class="nav-footer-text">IGC² 2026</p>
       </div>
     `;
 
