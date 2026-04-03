@@ -82,6 +82,7 @@ header.loaded {
     bottom: 10px;
     padding: 0 10px;
   }
+
   .footer-text {
     font-size: clamp(12px, 8vw, 80px);
   }
@@ -106,4 +107,36 @@ main.fade-in {
 
 main.fade-in.loaded {
   opacity: 1;
+}
+
+/* Floating Join Button */
+.floating-join-btn {
+  position: fixed;
+  top: 10px;
+  right: 90px;
+  background: linear-gradient(135deg, #e53935, #ff5252);
+  /* Red gradient */
+  color: #fff;
+  padding: 16px 40px;
+  border-radius: 5px;
+  font-family: 'Inter', 'Roboto', sans-serif;
+  font-weight: bold;
+  font-size: 1rem;
+  text-decoration: none;
+  z-index: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+@media (max-width: 480px) {
+  .floating-join-btn {
+    top: 15px;
+    right: 80px;
+    padding: 10px 16px;
+    font-size: 0.85rem;
+  }
 }
